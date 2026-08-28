@@ -1,0 +1,18 @@
+name: Bug report
+description: Wrong output, a panic, or a build failure
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: Expected vs actual, with a minimal reproducing input.
+    validations:
+      required: true
+  - type: input
+    id: zig-version
+    attributes:
+      label: Zig version
+      placeholder: 0.16.0
+    validations:
+      required: true
